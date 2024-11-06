@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bird's Image Gallery</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="navbar-brand">Gaurav's Image Gallery</div>
+            <ul class="navbar-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="gallery-container" id="gallery">
+            <h1>Bird's Image Gallery</h1>
+            <div class="gallery">
+                <img src="1.jpeg" alt="Bird Image 1">
+                <img src="2.jpg" alt="Bird Image 2">
+                <img src="3.jpg" alt="Bird Image 3">
+                <img src="4.jpeg" alt="Bird Image 4">
+                <img src="5.jpg" alt="Bird Image 5">
+                <img src="6.jpg" alt="Bird Image 6">
+                <img src="7.jpeg" alt="Bird Image 7">
+                <img src="8.jpg" alt="Bird Image 8">
+                <img src="9.jpeg" alt="Bird Image 9">
+                <img src="10.jpeg" alt="Bird Image 10">
+                <img src="11.jpeg" alt="Bird Image 11">
+                <img src="12.jpeg" alt="Bird Image 12">
+            
+
+            </div>
+        </div>
+        <br><br>
+
+        <!-- About Us Section -->
+        <div class="about-container" id="about">
+            <h2>About Us</h2>
+            <p>Welcome to<b> Gaurav's Image Gallery, </b>where the beauty and diversity of birdlife come alive!
+                 Founded by Gaurav, a passionate birder and photographer, 
+                 our gallery is a celebration of avian splendor and a tribute to the enchanting world of birds. 
+                 Through our curated collection of stunning bird photographs and detailed species information,
+                 we aim to inspire a deep appreciation for these incredible creatures.</p>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="contact-container" id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"
+                        required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <br>
+        <div id="imageModal" class="modal" style="display:none;">
+            <span class="close" id="closeBtn">&times;</span>
+            <img class="modal-content" id="modalImage" alt="">
+        </div>
+    
+        <script src="script.js"></script> <!-- Link to your JavaScript file -->
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Gaurav's Image Gallery. All rights reserved.</p>
+            
+
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

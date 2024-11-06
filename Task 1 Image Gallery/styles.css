@@ -1,0 +1,226 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf2f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* H1 Styles */
+.gallery-container h1 {
+    font-size: 2.5rem;
+    color: #1e4a61; 
+    text-align: center; 
+    margin-bottom: 1.5rem; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    border-bottom: 2px solid #1e4a61; 
+    padding-bottom: 0.5rem; 
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1e4a61; 
+    color: white; 
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.navbar-brand {
+    font-size: 1.8rem; 
+    font-weight: bold; 
+}
+
+.navbar-menu {
+    list-style: none; 
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 1.5rem; 
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none; 
+    font-size: 1rem;
+    transition: color 0.3s ease; 
+}
+
+.navbar-menu a:hover {
+    color: #ff7f50; 
+}
+
+/* Gallery Container Styling */
+.gallery-container {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    flex-grow: 1;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid #1e4a61;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* About Us Section Styles */
+.about-container {
+    background-color: #f9f9f9; 
+    padding: 2.5rem; 
+    border-radius: 8px; 
+    border: 2px solid #1e4a61;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto; 
+    width: 90%;
+    max-width: 1200px;
+}
+
+.about-container h2 {
+    font-size: 2rem; 
+    color: #1e4a61; 
+    margin-bottom: 1rem; 
+}
+
+.about-container p {
+    font-size: 1rem;
+    color: #555; 
+    line-height: 1.6;
+}
+
+/* Contact Us Section Styles */
+.contact-container {
+    width: 90%; 
+    max-width: 1200px;
+    margin: 1rem auto; 
+    padding: 2.5rem;  
+    border: 2px solid #1e4a61; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center; 
+    color: #1e4a61; 
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: flex; 
+    flex-direction: column; 
+    gap: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-size: 1rem; 
+    font-family: inherit;
+}
+
+button {
+    background-color: #ff7f50; 
+    color: white; 
+    border: none; 
+    padding: 0.75rem 1.25rem; 
+    border-radius: 4px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e5533d; 
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222; 
+    color: white; 
+    text-align: center; 
+    padding: 1.5rem; 
+    width: 100%; 
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.footer a {
+    color: #ff7f50; 
+    text-decoration: none; 
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* Modal Content */
+.modal-content {
+    margin: 10% auto;
+    display: block;
+    width: 80%;
+    max-width: 700px; 
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white; 
+    font-size: 2rem; 
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+.close:hover {
+    color: #ccc; 
+}
